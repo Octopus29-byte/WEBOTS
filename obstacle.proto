@@ -1,9 +1,9 @@
 #VRML_SIM R2025a utf8
 PROTO Obstacle [
-  field SFVec3f    translation      0 0 0.01  # Posición inicial
-  field SFRotation rotation         0 0 1 0           # Rotación inicial
-  field SFString   name            "Obstacle"        # Nombre del robot
-  field SFString   controller      "controller_obstacle"  # Controlador
+  field SFVec3f    translation      0 0 0.01
+  field SFRotation rotation         0 0 1 0
+  field SFString   name            "Obstacle"
+  field SFString   controller      "controller_obstacle"
 ]
 {
   Robot {
@@ -86,11 +86,10 @@ PROTO Obstacle [
             }
           ]
           boundingObject USE wheel
-          physics DEF wheel_physics Physics {
-            mass 0.05
-          }
+          physics USE wheel_physics
         }
       }
+    ]
     boundingObject USE Body
     physics Physics {
       mass 1
