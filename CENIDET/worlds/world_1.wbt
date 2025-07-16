@@ -1,0 +1,486 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/robot_Chilaquil.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.004319578379479587 -0.9999792580887474 0.004777513464343693 4.813615529038924
+  position -0.20247594183869733 0.06432318292316597 1.8184584886870538
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Chilaquil {
+  translation 0 0 0.01
+  controller "my_braitenberg_controller"
+}
+Solid {
+  translation -0.09 0.27 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation -0.36 -0.28 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(1)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation -0.21 0.1 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(2)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation 0.35 0.2 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(3)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation 0.17 -0.08 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(4)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation -0.35 0.3 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(5)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation -0.03 -0.38 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(6)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation 0.25 0.42 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(7)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation 0.31 -0.22 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  name "caja(8)"
+  boundingObject Box {
+    size 0.05 0.05 0.05
+  }
+}
+Solid {
+  translation 0.35 0 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation 0.08 0.36 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(1)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation 0.15 -0.4 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(2)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.41 0.15 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(3)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.14 -0.18 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(4)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.22 0.42 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(5)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.45 -0.4 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(6)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.04 0.05 0.024
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.05
+        radius 0.03
+      }
+    }
+  ]
+  name "cilindro(7)"
+  boundingObject Cylinder {
+    height 0.05
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.35 -0.11 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
+Solid {
+  translation 0.43 -0.38 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera(1)"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.46 0.44 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera(2)"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
+Solid {
+  translation 0.16 0.16 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera(3)"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
+Solid {
+  translation -0.22 -0.35 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera(4)"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
+Solid {
+  translation 0.04 -0.21 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera(5)"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
+Solid {
+  translation 0.43 0.42 0.03
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.2 0.5 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  name "esfera(6)"
+  boundingObject Sphere {
+    radius 0.03
+  }
+}
