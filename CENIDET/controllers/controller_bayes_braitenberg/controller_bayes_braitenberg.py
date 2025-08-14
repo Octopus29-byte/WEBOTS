@@ -54,13 +54,13 @@ def run_robot(robot):
             return 3
         else:
             return 0  # Ningún sensor detectó nada
-             
-       
+
+
 #####Funcion Vrot
 
     # Al inicio: cargar y procesar CSV
     modelo = defaultdict(list)
-    
+
     with open("vrot_data_unique.csv", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -68,16 +68,11 @@ def run_robot(robot):
             prox_val = int(row["Prox"])
             vrot_val = float(row["Vrot"])
             modelo[(dir_val, prox_val)].append(vrot_val)
-            
-    # Luego: calcular tabla con media y sigma
-    tabla = {}
-    for clave, valores in modelo.items():
-        mu = statistics.mean(valores)
-        sigma = statistics.stdev(valores) if len(valores) > 1 else 0.5  # evitar sigma=0
-        tabla[clave] = (mu, sigma)  
-        
-        
-        
+
+    # TAREA /// Calcular tabla con media y sigma
+
+
+
 ####### Main loop:
    
     
@@ -146,11 +141,9 @@ def run_robot(robot):
         calculadas para cada valor de dir y prox 
         
         """  
-        if (dir_val, prox_val) in tabla:
-            media, sigma = tabla[(dir_val, prox_val)]
-            vrot = random.gauss(media, sigma)
-        else:
-            vrot = 0 
+
+ 	      #TAREA /// Calcular Vrot
+        vrot = 0 #Por ahora queda fijo
             
         vtrans = 3
         
@@ -178,7 +171,7 @@ def run_robot(robot):
         print("dir_val: {}".format(dir_val))
         print("prox_val: {}".format(prox_val))       
         print("vrot: {}".format(vrot))
-        print(tabla)
+#        print(tabla)
 
 
 if __name__ == "__main__":
@@ -187,4 +180,3 @@ if __name__ == "__main__":
     # create the Robot instance.
     robot = Robot()
     run_robot(robot)
-    
